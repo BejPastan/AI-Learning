@@ -139,12 +139,12 @@ public class GeneticManager: MonoBehaviour
                 else
                 {
                     Debug.Log("child1 weights: " + child1.weights[j]);
-                    Debug.Log("newPopulation[aIndex]" + newPopulation[aIndex]);
-                    Debug.Log("newPopulation[aIndex].weights[j]: " + newPopulation[aIndex].weights[j]);
+                    Debug.Log("newPopulation[aIndex]" + newPopulation[bIndex]);
+                    Debug.Log("newPopulation[aIndex].weights[j]: " + newPopulation[bIndex].weights[j]);
                     child1.weights[j] = newPopulation[bIndex].weights[j];
                     Debug.Log("child2 weights: " + child2.weights[j]);
-                    Debug.Log("newPopulation[bIndex]" + newPopulation[bIndex]);
-                    Debug.Log("newPopulation[bIndex].weights[j]: " + newPopulation[bIndex].weights[j]);
+                    Debug.Log("newPopulation[bIndex]" + newPopulation[aIndex]);
+                    Debug.Log("newPopulation[bIndex].weights[j]: " + newPopulation[aIndex].weights[j]);
                     child2.weights[j] = newPopulation[aIndex].weights[j];
                 }
             }
